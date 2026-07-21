@@ -1,0 +1,18 @@
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="200" fill="#FAFAFA"/>
+
+  <!-- Email icon -->
+  <circle cx="100" cy="100" r="60" fill="#6C5CE7"/>
+  <rect x="72" y="82" width="56" height="38" rx="4" fill="none" stroke="#FAFAFA" stroke-width="3"/>
+  <path d="M72 84 L100 105 L128 84" fill="none" stroke="#FAFAFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- GitHub icon -->
+  <circle cx="300" cy="100" r="60" fill="#6C5CE7"/>
+  <path d="M300 62c-21 0-38 17-38 38 0 17 11 31 26 36 2 0.4 2.7-0.8 2.7-1.9v-7.4c-10.6 2.3-12.8-4.6-12.8-4.6-1.7-4.4-4.2-5.6-4.2-5.6-3.5-2.3.3-2.3.3-2.3 3.8.3 5.8 3.9 5.8 3.9 3.4 5.7 8.9 4.1 11 3.1.3-2.4 1.3-4.1 2.4-5-8.5-1-17.4-4.2-17.4-18.8 0-4.2 1.5-7.6 3.9-10.3-0.4-1-1.7-4.9.4-10.2 0 0 3.2-1 10.4 3.9 3-0.8 6.3-1.3 9.5-1.3s6.5.4 9.5 1.3c7.2-4.9 10.4-3.9 10.4-3.9 2.1 5.3.8 9.2.4 10.2 2.4 2.7 3.9 6.1 3.9 10.3 0 14.6-9 17.8-17.5 18.8 1.4 1.2 2.6 3.5 2.6 7v10.4c0 1.1.7 2.3 2.7 1.9 15-5 25.9-19.2 25.9-36 0-21-17-38-38-38z" fill="#FAFAFA"/>
+
+  <!-- LinkedIn icon -->
+  <circle cx="500" cy="100" r="60" fill="#6C5CE7"/>
+  <rect x="472" y="82" width="12" height="36" fill="#FAFAFA"/>
+  <circle cx="478" cy="70" r="7" fill="#FAFAFA"/>
+  <path d="M496 118 V96 c0-8 4-12 10-12 s10 4 10 12 v22 h-12 V98 c0-3-1-5-4-5 s-4 2-4 5 v20 z" fill="#FAFAFA"/>
+</svg>
