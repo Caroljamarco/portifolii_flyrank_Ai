@@ -16,8 +16,8 @@ export default function Work() {
           decision="Built a layered fallback: external API, fixed distance table, then Haversine formula, plus real-time DOM feedback with loading state, color-coded results, and transport highlighting."
           outcome="Works offline and without an API key, while showing interactive DOM moments like selected transport highlighting and live result updates."
           
-          liveUrl="#"
-          repoUrl="#"
+          liveUrl="https://calculadora-co2-improviment-cl6s-6vcgko95o.vercel.app/"
+          repoUrl="https://github.com/Caroljamarco/calculadora_co2_improviment"
         />
       </div>
     </section>
