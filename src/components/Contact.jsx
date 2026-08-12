@@ -13,6 +13,22 @@ export default function Contact() {
           >
             Email me
           </a>
+          <a
+            href="https://calendly.com/caroljamarco/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-accent hover:text-white"
+          >
+            Book a call
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1KBfnqk5NqNDv86kzEaQpE-jg5EOpCIhY/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-accent hover:text-white"
+          >
+            Download CV
+          </a>
         </div>
 
         <div className="mt-10 flex items-center justify-center gap-6">
