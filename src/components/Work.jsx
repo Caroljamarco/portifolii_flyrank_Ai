@@ -1,5 +1,4 @@
 import ProjectCard from './ProjectCard'
-import co2Bike from '../assets/co2-bike.jpeg'
 
 export default function Work() {
   return (
