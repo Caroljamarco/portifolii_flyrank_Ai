@@ -4,7 +4,7 @@ import heroBg from '../assets/hero_bg_variant_A.svg'
 export default function Hero() {
   return (
     <section id="hero" className="mx-auto max-w-7xl px-6 py-12 md:px-8">
-      <div className="grid gap-10 md:grid-cols-[55%_45%] justify-items-start items-start">
+      <div className="grid gap-10 md:grid-cols-[minmax(0,55%)_minmax(0,45%)] justify-items-start items-start">
         <div className="space-y-6">
           {/* Eyebrow Label with Badge Styling */}
           <div className="flex items-center gap-3">
@@ -26,7 +26,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[360px] overflow-hidden">
+        <div className="relative w-full max-w-[280px] sm:max-w-[300px] md:max-w-[240px] lg:max-w-[360px] justify-self-center overflow-hidden">
           <div className="absolute -left-6 -top-6 h-[calc(100%+3rem)] w-[calc(100%+3rem)] overflow-hidden rounded-[2.5rem]">
             <img src={heroBg} alt="Decorative purple background" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-20" />
           </div>
