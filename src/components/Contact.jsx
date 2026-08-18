@@ -11,7 +11,6 @@ export default function Contact() {
   async function handleSubmit(event) {
     event.preventDefault();
     setStatus("sending");
-
     try {
       const response = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
       if (!response.ok) throw new Error("Request failed");
@@ -28,12 +27,16 @@ export default function Contact() {
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">Let&apos;s connect</p>
         <h2 className="mt-4 text-3xl font-heading font-semibold leading-tight sm:text-4xl">Want to talk about how I could fit your team?</h2>
 
+        <div className="mx-auto mt-8 flex max-w-md flex-col items-center gap-3 sm:flex-row sm:justify-center">
+          <a href="https://calendly.com/caroljamarco/30min" target="_blank" rel="noopener noreferrer" className="w-full rounded-full bg-accent px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:opacity-90 sm:w-auto">Book a call</a>
+          <a href="https://drive.google.com/file/d/1KBfnqk5NqNDv86kzEaQpE-jg5EOpCIhY/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="w-full rounded-full border border-white/30 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-white/10 sm:w-auto">Download CV</a>
+        </div>
+
         <form onSubmit={handleSubmit} className="mx-auto mt-8 flex max-w-md flex-col gap-4 text-left">
           <input type="text" name="name" placeholder="Your name" value={form.name} onChange={handleChange} required className="rounded-xl bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent" />
           <input type="email" name="email" placeholder="Your email" value={form.email} onChange={handleChange} required className="rounded-xl bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent" />
           <textarea name="message" placeholder="Your message" value={form.message} onChange={handleChange} required rows={4} className="rounded-xl bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent" />
           <button type="submit" disabled={status === "sending"} className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-accent hover:text-white disabled:cursor-not-allowed disabled:opacity-60">{status === "sending" ? "Sending..." : "Send message"}</button>
-
           {status === "success" && <p className="text-sm text-green-400" role="status">Message sent! I&apos;ll get back to you soon.</p>}
           {status === "error" && <p className="text-sm text-red-400" role="alert">Something went wrong. Please try emailing me directly instead.</p>}
         </form>
